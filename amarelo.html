@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Bar</title>
+    <style>
+        body {
+            background-color: aquamarine; /* Cor de fundo verde água */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Adicionado para organizar os elementos verticalmente */
+        }
+        form {
+            display: flex;
+            justify-content: center; /* Modificado para centralizar a barra de pesquisa */
+            flex-grow: 1;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"], button {
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 20px; /* Adicionado para dar espaço entre a barra de pesquisa e o botão */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuNxiT602o4fTgG97t1I2AHLkr4oQi7vpbEAyl6G702eGlbfpxo28vBT3qstGvU2hXuJQg45WUaX0Wxpdo_fHZCoFxtfkmldtp4YdWH-GOQ57T5YLKsgy_UU3LK75afIcCb5poVYDxmAJi/w1200-h630-p-k-no-nu/nova_identidade_senac_1.png" alt="Logo da Instituição" style="margin-bottom: 20px;"> <!-- Modificado para incluir margem abaixo da imagem -->
+    
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Search Google..." />
+        <input type="submit" value="Search" />
+    </form>
+
+    <!-- Botão de boas-vindas -->
+    <button onclick="alert('Bem-vindo!')">Clique aqui</button>
+</body>
+</html>
