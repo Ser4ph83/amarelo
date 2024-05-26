@@ -2,46 +2,133 @@
 <html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Search Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://i.imgur.com/lh0PtGG.png" height="100px" width="100px">
+    <title>Maio Laranja</title>
     <style>
-        body {
-            background-color: aquamarine; 
+        body, html {
+            background-color: #ff9524;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow-y: hidde;
+        }
+        .título{
+            text-align: top;
+            text-align: center;
+            font-size: 25px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
             padding: 20px;
-            display: flex;
-            align-items: center;
-            flex-direction: column; 
         }
-        form {
-            display: flex;
-            justify-content: center; 
-            flex-grow: 1;
+        .texto {
+            flex: 1;
+            text-align: left;
+            margin-left: 170px;
+            margin-top: 5px;
+            font-size: 19px;
         }
-        input[type="text"] {
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
+        .imagem img {
+            float: right;
+            margin-left: 50px;
+            margin-right: 170px;
+            border-radius: 5%;
         }
-        input[type="submit"], button {
-            padding: 5px 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            cursor: pointer;
-            margin-top: 20px; 
+        .frases{
+            font-size: 25px;
+        }
+        .frasesbotão input[type="button"] {
+            text-align: center;
+            background-color: #FF6400;
+            color: white;
+            border: 2px solid #FF6400;
+            border-radius: 30px;
+            height: 50px;
+            width: 200px;
+        }
+        .frasesbotão input[type="button"]:hover {
+
+            background-color: white;
+            color:#FF6400;
+        }        
+        .imagem2 img{
+            text-align: center;
+            margin-top: 25px;
+            border-radius: 5%;
+            border: 2px solid white;
+        }
+        .telefone img{
+            margin-top: 50px;
+            font-size: 17px;
+            color: white;
+            border-radius: 5%;
         }
     </style>
 </head>
 <body>
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuNxiT602o4fTgG97t1I2AHLkr4oQi7vpbEAyl6G702eGlbfpxo28vBT3qstGvU2hXuJQg45WUaX0Wxpdo_fHZCoFxtfkmldtp4YdWH-GOQ57T5YLKsgy_UU3LK75afIcCb5poVYDxmAJi/w1200-h630-p-k-no-nu/nova_identidade_senac_1.png" alt="Logo da Instituição" style="margin-bottom: 20px;"> <!-- Modificado para incluir margem abaixo da imagem -->
-    
-    <form action="https://www.google.com/search" method="get" target="_blank">
-        <input type="text" name="q" placeholder="Search Google..." />
-        <input type="submit" value="Search" />
-    </form>
+    <div class="título">
+            <h1>Bem-vindo ao nosso site sobre o Maio Laranja!</h1>
+        </div>
+    <div class="container">
+        <div class="texto">
+            <h1>O que é a Campanha?</h1>
+            <p>O Maio Laranja é uma iniciativa que visa conscientizar sobre a exploração e o abuso sexual de crianças e adolescentes no Brasil.<br> A cada hora, 3 crianças são abusadas no Brasil, e cerca de 51% têm entre 1 a 5 anos de idade.</p>
+            <h1>Origem da Campanha</h1>
+            <p>O dia 18 de maio foi escolhido para o Dia Nacional de Combate ao Abuso e à Exploração Sexual de Crianças e Adolescentes,desse modo todo o mês ficou marcado por essa luta.<br> A expressão "Maio Laranja" surgiu da ideia de usar uma flor como símbolo da campanha.</p>
+            <h1>Objetivo dessa Campanha</h1>
+            <p>Conscientizar a população sobre a importância de combater o abuso e a exploração sexual infantil, além de orientar como identificar e denunciar casos suspeitos.</p>
+            <h1>Como ajudar a campanha?</h1>
+            <p>Você pode ajudar a campanha divulgando ela em suas redes sociais, participando da organização de eventos sobre esse tema e se informando mais sobre o assunto</p>
+        </div>
+        <div class="imagem">
+            <img src="https://barreiras.ba.gov.br/wp-content/uploads/2023/05/maio-laranja.jpg">
+        </div>
 
-    <!-- Botão de boas-vindas -->
-    <button onclick="alert('Bem-vindo!')">Clique aqui</button>
-</body>
-</html>
+        </div>
+    <div class="frases">
+        <center><h1>Frases positivas</h1></center>
+
+        <div class="frasesbotão">
+            <center>
+           <input type="button" value="Frase 1" onclick="exibirMensagem1()">
+           <input type="button" value="Frase 2" onclick="exibirMensagem2()">
+           <input type="button" value="Frase 3" onclick="exibirMensagem3()">
+           <input type="button" value="Frase 4" onclick="exibirMensagem4()">
+           <input type="button" value="Frase 5" onclick="exibirMensagem5()">
+            </center>
+        </div>
+
+        <div class="imagem2">
+            <center> <img src="https://www.espro.org.br/wp-content/uploads/2024/04/Maio-Laranja-Banner-Blog.jpg" height="500px" width="800px"> </center>
+        </div>
+</div>
+
+    <div class="telefone">
+        <center><h1>Abuso infantil é crime!</h1>
+        <a href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos#:~:text=O%20Disque%20Direitos%20Humanos%20%E2%80%93%20Disque,funcionamento%20dos%20servi%C3%A7os%20de%20atendimento." target="_blank" rel="noreferrer noopener">
+        <img src="https://www.gov.br/mdh/pt-br/ondh/centrais-de-conteudo/imagens/disque-100.png">
+        </a>
+        </center>
+    </div>
+
+<script>
+        function exibirMensagem1() {
+            alert('Você é forte e corajoso, não tenha medo! ')
+        }
+        function exibirMensagem2() {
+            alert('Sua voz importa e seu bem-estar é nossa prioridade. ')
+        }
+        function exibirMensagem3() {
+            alert('Você tem o direito de se sentir seguro e protegido. ')
+        }
+        function exibirMensagem4() {
+            alert('Lembre-se, você nunca está sozinho. ')
+        }
+        function exibirMensagem5() {
+            alert('Seu futuro é brilhante e merece ser vivido com alegria. ')
+        }
+</script>
+
+</body></html>
