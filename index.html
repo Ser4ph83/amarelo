@@ -1,140 +1,529 @@
+[15:26] JOSE EDUARDO DOS SANTOS CERQUEIRA
 <!DOCTYPE html>
+
 <html lang="Pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=devicewidth,initial-scale=1">
-<link rel="icon" href="https://i.imgur.com/lh0PtGG.png" height="100px" width="100px">
-<title>Maio Laranja</title>
-<style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=devicewidth,initial-scale=1">
+
+    <link rel="icon" href="https://i.imgur.com/lh0PtGG.png" height="100px" width="100px">
+
+    <title>Maio Laranja</title>
+
+    <style>
+
         body, html {
+
             background-color: #ff9524;
+
             color: white;
+
             font-family: Arial, sans-serif;
+
         }
+
         .título{
+
             text-align: top;
+
             text-align: center;
+
             font-size: 25px;
+
         }
+
         .container {
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: top;
+
             padding: 20px;
+
         }
+
         .texto {
+
             flex: 1;
+
             text-align: left;
-            margin-left: 170wn;
-            margin-top: 5wn;
-            font-size: 19wn;
+
+            margin-left: 50px;
+
+            margin-top: 50wn;
+
+            font-size: 20px;
+
         }
+
         .imagem img {
+
             float: right;
+
             margin-left: 50wn;
+
             margin-right: 170wn;
+
             border-radius: 5%;
+
         }
+
         .frases{
+
             font-size: 25px;
+
         }
+
         .frasesbotão input[type="button"] {
+
             text-align: center;
+
             background-color: #FF6400;
+
             color: white;
+
             border: 2px solid #FF6400;
+
             border-radius: 30px;
+
             height: 50px;
+
             width: 200px;
+
         }
+
         .frasesbotão input[type="button"]:hover {
  
             background-color: white;
+
             color:#FF6400;
+
         }        
+
         .imagem2 img{
+
             text-align: center;
+
             margin-top: 25px;
+
             border-radius: 5%;
+
             border: 2px solid white;
  
         }
+
         .telefone img{
+
             margin-top: 50px;
+
             font-size: 17px;
+
             color: white;
+
             border-radius: 5%;
+
         }
+
         .img img {
+
             max-width: 100%;
+
             height: auto;
+
         }
  
     </style>
+
 </head>
+
 <body>
-<div class="img">
-<div class="título">
-<h1>Bem-vindo ao nosso site sobre o Maio Laranja!</h1>
-</div>
-<div class="container">
-<div class="texto">
-<h1>O que é a Campanha?</h1>
-<p>O Maio Laranja é uma iniciativa que visa conscientizar sobre a exploração e o abuso sexual de crianças e adolescentes no Brasil.<br> A cada hora, 3 crianças são abusadas no Brasil, e cerca de 51% têm entre 1 a 5 anos de idade.</p>
-<h1>Origem da Campanha</h1>
-<p>O dia 18 de maio foi escolhido para o Dia Nacional de Combate ao Abuso e à Exploração Sexual de Crianças e Adolescentes,desse modo todo o mês ficou marcado por essa luta.<br> A expressão "Maio Laranja" surgiu da ideia de usar uma flor como símbolo da campanha.</p>
-<h1>Objetivo dessa Campanha</h1>
-<p>Conscientizar a população sobre a importância de combater o abuso e a exploração sexual infantil, além de orientar como identificar e denunciar casos suspeitos.</p>
-<h1>Como ajudar a campanha?</h1>
-<p>Você pode ajudar a campanha divulgando ela em suas redes sociais, participando da organização de eventos sobre esse tema e se informando mais sobre o assunto</p>
-</div>
-<div class="imagem">
-<img src="https://barreiras.ba.gov.br/wp-content/uploads/2023/05/maio-laranja.jpg">
-</div>
+
+    <div class="img">
+
+    <div class="título">
+
+            <h1>Bem-vindo ao nosso site sobre o Maio Laranja!</h1>
+
+        </div>
+
+    <div class="container">
+
+        <div class="texto">
+
+            <h1>O que é a Campanha?</h1>
+
+            <p>O Maio Laranja é uma iniciativa que visa conscientizar sobre a exploração e o abuso sexual de crianças e adolescentes no Brasil.<br> A cada hora, 3 crianças são abusadas no Brasil, e cerca de 51% têm entre 1 a 5 anos de idade.</p>
+
+            <h1>Origem da Campanha</h1>
+
+            <p>O dia 18 de maio foi escolhido para o Dia Nacional de Combate ao Abuso e à Exploração Sexual de Crianças e Adolescentes,desse modo todo o mês ficou marcado por essa luta.<br> A expressão "Maio Laranja" surgiu da ideia de usar uma flor como símbolo da campanha.</p>
+
+            <h1>Objetivo dessa Campanha</h1>
+
+            <p>Conscientizar a população sobre a importância de combater o abuso e a exploração sexual infantil, além de orientar como identificar e denunciar casos suspeitos.</p>
+
+            <h1>Como ajudar a campanha?</h1>
+
+            <p>Você pode ajudar a campanha divulgando ela em suas redes sociais, participando da organização de eventos sobre esse tema e se informando mais sobre o assunto</p>
+
+        </div>
+
+        <div class="imagem">
+
+            <img src="https://barreiras.ba.gov.br/wp-content/uploads/2023/05/maio-laranja.jpg">
+
+        </div>
  
         </div>
-<div class="frases">
-<center><h1>Frases positivas</h1></center>
+
+    <div class="frases">
+
+        <center><h1>Frases positivas</h1></center>
  
         <div class="frasesbotão">
-<center>
-<input type="button" value="Frase 1" onclick="exibirMensagem1()">
-<input type="button" value="Frase 2" onclick="exibirMensagem2()">
-<input type="button" value="Frase 3" onclick="exibirMensagem3()">
-<input type="button" value="Frase 4" onclick="exibirMensagem4()">
-<input type="button" value="Frase 5" onclick="exibirMensagem5()">
-</center>
-</div>
+
+            <center>
+
+           <input type="button" value="Frase 1" onclick="exibirMensagem1()">
+
+           <input type="button" value="Frase 2" onclick="exibirMensagem2()">
+
+           <input type="button" value="Frase 3" onclick="exibirMensagem3()">
+
+           <input type="button" value="Frase 4" onclick="exibirMensagem4()">
+
+           <input type="button" value="Frase 5" onclick="exibirMensagem5()">
+
+            </center>
+
+        </div>
  
         <div class="imagem2">
-<center> <img src="https://www.espro.org.br/wp-content/uploads/2024/04/Maio-Laranja-Banner-Blog.jpg" height="500px" width="800px"> </center>
-</div>
+
+            <center> <img src="https://www.espro.org.br/wp-content/uploads/2024/04/Maio-Laranja-Banner-Blog.jpg" height="500px" width="800px"> </center>
+
+        </div>
+
 </div>
  
     <div class="telefone">
-<center><h1>Abuso infantil é crime!</h1>
-<a href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos#:~:text=O%20Disque%20Direitos%20Humanos%20%E2%80%93%20Disque,funcionamento%20dos%20servi%C3%A7os%20de%20atendimento." target="_blank" rel="noreferrer noopener">
-<img src="https://www.gov.br/mdh/pt-br/ondh/centrais-de-conteudo/imagens/disque-100.png">
-</a>
-</center>
+
+        <center><h1>Abuso infantil é crime!</h1>
+
+        <a href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos#:~:text=O%20Disque%20Direitos%20Humanos%20%E2%80%93%20Disque,funcionamento%20dos%20servi%C3%A7os%20de%20atendimento." target="_blank" rel="noreferrer noopener">
+
+        <img src="https://www.gov.br/mdh/pt-br/ondh/centrais-de-conteudo/imagens/disque-100.png">
+
+        </a>
+
+        </center>
+
+    </div>
+
 </div>
-</div>
+
 <script>
+
         function exibirMensagem1() {
+
             alert('Você é forte e corajoso, não tenha medo! ')
+
         }
+
         function exibirMensagem2() {
+
             alert('Sua voz importa e seu bem-estar é nossa prioridade. ')
+
         }
+
         function exibirMensagem3() {
+
             alert('Você tem o direito de se sentir seguro e protegido. ')
+
         }
+
         function exibirMensagem4() {
+
             alert('Lembre-se, você nunca está sozinho. ')
+
         }
+
         function exibirMensagem5() {
+
             alert('Seu futuro é brilhante e merece ser vivido com alegria. ')
+
         }
+
+</script>
+ 
+</body></html>
+
+[15:30] JOSE EDUARDO DOS SANTOS CERQUEIRA
+<!DOCTYPE html>
+
+<html lang="Pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=devicewidth,initial-scale=1">
+
+    <link rel="icon" href="https://i.imgur.com/lh0PtGG.png" height="100px" width="100px">
+
+    <title>Maio Laranja</title>
+
+    <style>
+
+        body, html {
+
+            background-color: #ff9524;
+
+            color: white;
+
+            font-family: Arial, sans-serif;
+
+        }
+
+        .título{
+
+            text-align: top;
+
+            text-align: center;
+
+            font-size: 25px;
+
+        }
+
+        .container {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: top;
+
+            padding: 20px;
+
+        }
+
+        .texto {
+
+            flex: 1;
+
+            text-align: left;
+
+            margin-left: 30px;
+
+            margin-top: 50wn;
+
+            font-size: 20px;
+
+        }
+
+        .imagem img {
+
+            float: right;
+
+            margin-left: 50px;
+
+            margin-right: 170wn;
+
+            border-radius: 5%;
+
+        }
+
+        .frases{
+
+            font-size: 25px;
+
+        }
+
+        .frasesbotão input[type="button"] {
+
+            text-align: center;
+
+            background-color: #FF6400;
+
+            color: white;
+
+            border: 2px solid #FF6400;
+
+            border-radius: 30px;
+
+            height: 50px;
+
+            width: 200px;
+
+        }
+
+        .frasesbotão input[type="button"]:hover {
+ 
+            background-color: white;
+
+            color:#FF6400;
+
+        }        
+
+        .imagem2 img{
+
+            text-align: center;
+
+            margin-top: 25px;
+
+            border-radius: 5%;
+
+            border: 2px solid white;
+ 
+        }
+
+        .telefone img{
+
+            margin-top: 50px;
+
+            font-size: 17px;
+
+            color: white;
+
+            border-radius: 5%;
+
+        }
+
+        .img img {
+
+            max-width: 100%;
+
+            height: auto;
+
+        }
+ 
+    </style>
+
+</head>
+
+<body>
+
+    <div class="img">
+
+    <div class="título">
+
+            <h1>Bem-vindo ao nosso site sobre o Maio Laranja!</h1>
+
+        </div>
+
+    <div class="container">
+
+        <div class="texto">
+
+            <h1>O que é a Campanha?</h1>
+
+            <p>O Maio Laranja é uma iniciativa que visa conscientizar sobre a exploração e o abuso sexual de crianças e adolescentes no Brasil.<br> A cada hora, 3 crianças são abusadas no Brasil, e cerca de 51% têm entre 1 a 5 anos de idade.</p>
+
+            <h1>Origem da Campanha</h1>
+
+            <p>O dia 18 de maio foi escolhido para o Dia Nacional de Combate ao Abuso e à Exploração Sexual de Crianças e Adolescentes,desse modo todo o mês ficou marcado por essa luta.<br> A expressão "Maio Laranja" surgiu da ideia de usar uma flor como símbolo da campanha.</p>
+
+            <h1>Objetivo dessa Campanha</h1>
+
+            <p>Conscientizar a população sobre a importância de combater o abuso e a exploração sexual infantil, além de orientar como identificar e denunciar casos suspeitos.</p>
+
+            <h1>Como ajudar a campanha?</h1>
+
+            <p>Você pode ajudar a campanha divulgando ela em suas redes sociais, participando da organização de eventos sobre esse tema e se informando mais sobre o assunto</p>
+
+        </div>
+
+        <div class="imagem">
+
+            <img src="https://barreiras.ba.gov.br/wp-content/uploads/2023/05/maio-laranja.jpg">
+
+        </div>
+ 
+        </div>
+
+    <div class="frases">
+
+        <center><h1>Frases positivas</h1></center>
+ 
+        <div class="frasesbotão">
+
+            <center>
+
+           <input type="button" value="Frase 1" onclick="exibirMensagem1()">
+
+           <input type="button" value="Frase 2" onclick="exibirMensagem2()">
+
+           <input type="button" value="Frase 3" onclick="exibirMensagem3()">
+
+           <input type="button" value="Frase 4" onclick="exibirMensagem4()">
+
+           <input type="button" value="Frase 5" onclick="exibirMensagem5()">
+
+            </center>
+
+        </div>
+ 
+        <div class="imagem2">
+
+            <center> <img src="https://www.espro.org.br/wp-content/uploads/2024/04/Maio-Laranja-Banner-Blog.jpg" height="500px" width="800px"> </center>
+
+        </div>
+
+</div>
+ 
+    <div class="telefone">
+
+        <center><h1>Abuso infantil é crime!</h1>
+
+        <a href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos#:~:text=O%20Disque%20Direitos%20Humanos%20%E2%80%93%20Disque,funcionamento%20dos%20servi%C3%A7os%20de%20atendimento." target="_blank" rel="noreferrer noopener">
+
+        <img src="https://www.gov.br/mdh/pt-br/ondh/centrais-de-conteudo/imagens/disque-100.png">
+
+        </a>
+
+        </center>
+
+    </div>
+
+</div>
+
+<script>
+
+        function exibirMensagem1() {
+
+            alert('Você é forte e corajoso, não tenha medo! ')
+
+        }
+
+        function exibirMensagem2() {
+
+            alert('Sua voz importa e seu bem-estar é nossa prioridade. ')
+
+        }
+
+        function exibirMensagem3() {
+
+            alert('Você tem o direito de se sentir seguro e protegido. ')
+
+        }
+
+        function exibirMensagem4() {
+
+            alert('Lembre-se, você nunca está sozinho. ')
+
+        }
+
+        function exibirMensagem5() {
+
+            alert('Seu futuro é brilhante e merece ser vivido com alegria. ')
+
+        }
+
 </script>
  
 </body>
